@@ -1,27 +1,3 @@
-<!--<!DOCTYPE>
-<html>
-<head>
-     <title>Zodiac App</title>
-     <link rel="stylesheet" type="text/css" href="styles.css">
-     <script type="text/javascript" src="">
-          function getAltered(){
-               var name = "Eldor";
-               var number = 20;
-               document.getElementById('demo').innerHTML=name;
-          }
-     </script>
-</head>
-<body>
-     <h1>Welcome to Zodiac App</h1>
-     <p id="par">this is paragragh</p>
-     <p class="pa">this is second paragraph</p>
-     <button id="btn" onclick="getAltered()">click me</button>
-     <br>
-     <div id="demo">
-
-     </div>
-</body>
-</html>-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,10 +17,10 @@
     <a class="navbar-brand" href="/">Zodiac App</a>
 </nav>
      <div class="container">
-          <h1>Welcome to Zodiac App</h1>
+          <!--<h1>Welcome to Zodiac App</h1>-->
           <div class="row">
                <div class="col-md-4">
-                    <img src="/images/zodiac.jpg" class="image-responsive">
+                    <img src="/images/zodiac.jpg" class="images-responsive">
                     <hr>
                     <form>
                          <div class="form-group">
@@ -52,12 +28,16 @@
                               placeholder="Type zodiac name ...">
                          </div>
                          <div class="form-group">
-                              <button class="btn btn-danger" type="button">Find</button>
+                              <button class="btn btn-danger" onclick="getData()" type="button"
+                              >Find</button>
                          </div>
                     </form>
                </div>
                <div class="col-md-4">
-                    <p>Result will display here</p>
+                    <h2 id="name"></h2>
+                    <h5 id="date"></h5>
+                    <img id="img">
+                    <p id="text-result"></p>
                </div>
           </div>
      </div>
